@@ -169,6 +169,12 @@ You need to complete the following tasks before deploying Application Gateway fo
         --set albController.namespace=$CONTROLLER_NAMESPACE \
         --set albController.podIdentity.clientID=$(az identity show -g $RESOURCE_GROUP -n azure-alb-identity --query clientId -o tsv)
     ```
+    ### Error during deployments
+    If you encounter below error, run the following commands:
+
+    > [!Note]
+    > If you face the error message `Error: INSTALLATION FAILED: values don't meet the specifications of the schema(s) in the following chart(s): alb-controller: json-pointer in "file:///values.schema.json#/properties/definitions/properties/imagePullSecret" not found`, This is an issue that started with the latest version of helm. The workaround is to use `--skip-schema-validation` on the helm install command. The next version of ALB Controller (v1.8.x series) will address this issue.
+
 
 ### Verify the ALB Controller installation
 
