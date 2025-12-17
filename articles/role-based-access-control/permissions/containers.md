@@ -997,7 +997,7 @@ Azure service: [Azure Red Hat OpenShift](/azure/openshift/)
 > [!div class="mx-tableFixed"]
 > | Action | Description |
 > | --- | --- |
-> | Microsoft.RedHatOpenShift/locations/listInstallVersions/read |  |
+> | Microsoft.RedHatOpenShift/locations/openshiftVersions/read |  |
 > | Microsoft.RedHatOpenShift/locations/listPlatformWorkloadIdentityRoleSets/read |  |
 > | Microsoft.RedHatOpenShift/locations/operationresults/read |  |
 > | Microsoft.RedHatOpenShift/locations/operationsstatus/read |  |
